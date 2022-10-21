@@ -1,5 +1,5 @@
 const smallestNumber = 1
-const higherNumber = 100
+const higherNumber = 1000
 const numberSecret = generateNumber();
 
 

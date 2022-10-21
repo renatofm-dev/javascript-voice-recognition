@@ -11,6 +11,8 @@ function onSpeak (e) {
    chute = e.results[0][0].transcript
     showTryInScreen(chute);
 
+    numberValidation (chute)
+
 }
 
 function showTryInScreen (chute) {
@@ -19,3 +21,5 @@ function showTryInScreen (chute) {
     <span class="box">${chute}</span>
     `
 }
+
+recognition.addEventListener('end', () => recognition.start());
